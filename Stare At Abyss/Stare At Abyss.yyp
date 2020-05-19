@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "157f4c6f-392b-4c06-917a-a42cf331837e",
+            "Value": {
+                "id": "6bc13dad-8471-417d-99a9-b389af8c44f4",
+                "resourcePath": "objects\\obj_basicFont\\obj_basicFont.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "302f5e38-aa85-4350-b11f-fe6bbc53b5da",
             "Value": {
                 "id": "5482ec7d-d908-4d43-a649-ad751a35820b",
@@ -100,6 +108,14 @@
                 "id": "4d7dbc0e-6c25-4127-a740-e89f4fae8bff",
                 "resourcePath": "views\\77d146ee-31ae-4c44-a89c-ec5daa6b8a14.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "92450f2c-a146-4ffd-a232-96d74a87880d",
+            "Value": {
+                "id": "838234e3-23f9-44e7-ae99-36cfa3fefe17",
+                "resourcePath": "datafiles_yy\\basicFont.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
