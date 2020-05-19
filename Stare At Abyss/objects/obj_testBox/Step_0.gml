@@ -6,3 +6,8 @@ if dragged{
 	x = dragX;
 	y = dragY;
 }
+
+//淡入淡出效果
+if (x <= initX || x >= initX+10){
+	hspeed = 0;
+}

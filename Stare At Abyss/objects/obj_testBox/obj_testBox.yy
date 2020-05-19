@@ -73,6 +73,26 @@
             "enumb": 0,
             "eventtype": 1,
             "m_owner": "322afa2f-ac23-4f9a-933d-22c5a5256d9d"
+        },
+        {
+            "id": "8c2d9fa4-0111-4fd2-99c2-838ced939395",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "322afa2f-ac23-4f9a-933d-22c5a5256d9d"
+        },
+        {
+            "id": "40a66f67-8cdb-4467-9c3c-00ef81b843e8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "a2cc1481-412a-4499-9955-feb598273973",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "322afa2f-ac23-4f9a-933d-22c5a5256d9d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -104,6 +124,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "dragged",
+            "varType": 3
+        },
+        {
+            "id": "579823b5-2101-4e45-8bb2-28c882072ac4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "mouseIn",
             "varType": 3
         }
     ],

@@ -6,4 +6,5 @@ if dragged{
 	var _yy = event_data[?"posY"];
 	dragX = dragOffsetX+_xx;
 	dragY = dragOffsetY+_yy;
+	image_blend = c_lime;
 }

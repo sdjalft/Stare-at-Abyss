@@ -2,4 +2,11 @@
 // 你可以在此编辑器中写入代码
 
 dragged = false;
-instance_destroy();
+if (place_meeting(x,y,obj_testDustbin)){
+	rubbish = 1;
+	x = initX;
+	y = initY;
+}
+else{
+	instance_destroy();
+}
