@@ -2,7 +2,10 @@
 // 你可以在此编辑器中写入代码
 
 dragged = false;
-if (place_meeting(x,y,obj_testDustbin) || place_meeting(x,y,obj_testBoxSpawner)){
+if (place_meeting(x,y,obj_testDustbin)){
+	instance_destroy();
+}
+if (place_meeting(x,y,obj_testBoxSpawner)){
 	if (position_meeting(initX,initY,obj_testBox)){
 		instance_destroy();
 	}
@@ -10,8 +13,7 @@ if (place_meeting(x,y,obj_testDustbin) || place_meeting(x,y,obj_testBoxSpawner))
 		rubbish = 1;
 		x = initX;
 		y = initY;
+		exit;
 	}
 }
-else{
-	instance_destroy();
-}
+instance_destroy();

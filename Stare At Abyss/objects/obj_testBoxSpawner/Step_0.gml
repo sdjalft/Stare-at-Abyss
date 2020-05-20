@@ -6,7 +6,6 @@ if spawnment{
 	for (var _cc = 0; _cc < ds_list_size(boxX); _cc++){
 		spawnTime[|_cc] -= 1;
 		if (spawnTime[|_cc] == 0 && !position_meeting(boxX[|_cc],boxY[|_cc],obj_testBox)){
-			show_debug_message("sdsd");
 			boxName[|_cc] = "obj_testBox";
 			instance_create_layer(boxX[|_cc],boxY[|_cc],"Instances",asset_get_index(boxName[|_cc]));
 		}
