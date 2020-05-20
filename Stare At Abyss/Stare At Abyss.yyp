@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "643bef66-9e5e-4dec-984f-15f7de09ef81",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
+            }
+        },
+        {
             "Key": "76c9c966-4386-4328-93de-0e80827c9c67",
             "Value": {
                 "id": "1ed71ab5-2f99-43fb-935b-d02efe0c4dba",
@@ -124,6 +132,14 @@
                 "id": "4d7dbc0e-6c25-4127-a740-e89f4fae8bff",
                 "resourcePath": "views\\77d146ee-31ae-4c44-a89c-ec5daa6b8a14.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
+            "Value": {
+                "id": "98c2b6f6-3dd1-42c3-954d-7bbca6cf1100",
+                "resourcePath": "options\\ios\\options_ios.yy",
+                "resourceType": "GMiOSOptions"
             }
         },
         {
@@ -148,6 +164,22 @@
                 "id": "805c9ff4-fea1-4040-8940-10fa75362853",
                 "resourcePath": "views\\927f8280-9671-423b-ac5b-9ccd1a0132ac.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
+            "Value": {
+                "id": "b2a7d2b5-52a6-4a83-9b74-6a13ab758d72",
+                "resourcePath": "options\\tvos\\options_tvos.yy",
+                "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
+            "Value": {
+                "id": "011c0f3e-3ecb-4af2-a322-f51537b81927",
+                "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
+                "resourceType": "GMAmazonFireOptions"
             }
         },
         {
@@ -228,6 +260,14 @@
                 "id": "f9c85902-51cc-47cc-88e3-77e74bdad653",
                 "resourcePath": "views\\dc66e2f0-bdfc-46a8-a63c-006badb4b6e8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
+            "Value": {
+                "id": "7d08fe97-3ac8-4913-80f9-42d0e6e14567",
+                "resourcePath": "options\\android\\options_android.yy",
+                "resourceType": "GMAndroidOptions"
             }
         },
         {
