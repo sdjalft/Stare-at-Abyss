@@ -11,3 +11,9 @@ if dragged{
 if (x <= initX || x >= initX+10){
 	hspeed = 0;
 }
+
+//图片进入
+if (image_xscale < 1){
+	image_xscale += 0.02;
+	image_yscale += 0.02;
+}

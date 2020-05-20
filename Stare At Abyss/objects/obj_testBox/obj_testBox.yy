@@ -93,6 +93,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "322afa2f-ac23-4f9a-933d-22c5a5256d9d"
+        },
+        {
+            "id": "41b8b24e-b9e2-4673-8b3a-54e2bdde8408",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "322afa2f-ac23-4f9a-933d-22c5a5256d9d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -139,6 +149,20 @@
             "value": "0",
             "varName": "mouseIn",
             "varType": 3
+        },
+        {
+            "id": "a73e9cac-5541-4bfc-bf6c-6687a04d9871",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "spawnerId",
+            "varType": 0
         }
     ],
     "solid": false,

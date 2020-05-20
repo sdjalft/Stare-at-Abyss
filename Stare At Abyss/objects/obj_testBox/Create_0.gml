@@ -4,3 +4,6 @@
 initX = x;
 initY = y;
 rubbish = 0;
+image_xscale = 0.5;
+image_yscale = 0.5;
+hao = irandom(10);
