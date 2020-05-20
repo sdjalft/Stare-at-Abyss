@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "7d3e8a3b-0060-4f65-8672-a196b4f3520a",
+            "Value": {
+                "id": "006f72b9-33da-4bad-9a59-35fe9893ad28",
+                "resourcePath": "datafiles_yy\\basicFont.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "98c2b6f6-3dd1-42c3-954d-7bbca6cf1100",
@@ -156,14 +164,6 @@
                 "id": "995cef21-2d98-4c9e-9eda-bd8008500733",
                 "resourcePath": "sprites\\spr_testBox\\spr_testBox.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "92450f2c-a146-4ffd-a232-96d74a87880d",
-            "Value": {
-                "id": "838234e3-23f9-44e7-ae99-36cfa3fefe17",
-                "resourcePath": "datafiles_yy\\basicFont.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
