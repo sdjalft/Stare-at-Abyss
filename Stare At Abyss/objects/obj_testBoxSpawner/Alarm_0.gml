@@ -7,5 +7,4 @@ for (var _cc = 0; _cc < boxCounts; _cc++){
 	ds_list_add(boxName,"obj_testBox");
 	ds_list_add(spawnTime,-1);
 	instance_create_layer(boxX[|_cc],boxY[|_cc],"Instances",asset_get_index(boxName[|_cc]));
-	spawnment = true;
 }

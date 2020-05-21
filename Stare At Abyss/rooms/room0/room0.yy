@@ -10,7 +10,8 @@
         "66673076-98ba-4b8b-ac1f-1bd16c17785b",
         "a66051f0-c759-431b-93cb-e8aca20366a2",
         "be150422-7f91-4ca2-abfb-d28d5ac2a811",
-        "046c1492-9c70-4d94-b6cb-45f2f2398e18"
+        "046c1492-9c70-4d94-b6cb-45f2f2398e18",
+        "4c1e4085-b633-4867-863f-76fd98736c9d"
     ],
     "IsDnD": false,
     "layers": [
@@ -44,13 +45,39 @@
             "visible": true
         },
         {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "mapSpawner",
+            "id": "45f28bbc-eb03-447c-8854-27cbad485052",
+            "depth": 100,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_6D19EFCC","id": "4c1e4085-b633-4867-863f-76fd98736c9d","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_6D19EFCC","objId": "c22bcdc0-3008-4856-bb14-5250662754a3","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 32,"y": -32}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Background",
             "id": "0f6c03a6-9016-458d-aa2c-591a0f04fe84",
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4278190080 },
-            "depth": 100,
+            "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
