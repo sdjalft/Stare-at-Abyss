@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "7373af27-b1ef-4dfb-8512-b77f8d519a20",
+            "Value": {
+                "id": "85967a61-1e63-4b2d-8ef7-1950d559113e",
+                "resourcePath": "objects\\obj_mapScroller\\obj_mapScroller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "643bef66-9e5e-4dec-984f-15f7de09ef81",
