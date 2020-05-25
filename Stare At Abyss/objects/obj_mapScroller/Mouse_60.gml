@@ -3,11 +3,12 @@
 
 //var _cx = camera_get_view_x(0)+camera_get_view_width(0)/2;
 //var _cy = camera_get_view_y(0)+camera_get_view_height(0)/2;
-if (cameraHeight < window_get_height() || true) {	//参数可改
-	cameraHeight *= scale;
-	cameraWidth *= scale;
-	camera_set_view_size(view_camera[0] , cameraWidth , cameraHeight);
+if (currentZoom > 0.4) {	//参数可改
+	currentZoom /= 1.02;
+	camera_set_view_size(view_camera[0] ,
+						cameraWidth * currentZoom,
+						cameraHeight * currentZoom);
 	camera_set_view_pos(view_camera[0] ,
-						camera_x - cameraWidth / 2 ,
-						camera_y - cameraHeight / 2);
+						camera_x - cameraWidth * currentZoom / 2 ,
+						camera_y - cameraHeight * currentZoom / 2);
 }
