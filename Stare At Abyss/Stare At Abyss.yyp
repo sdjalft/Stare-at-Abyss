@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "b4a0e280-837c-4ed1-a003-d8003fef9ade",
+            "Value": {
+                "id": "a3e136e5-735a-4bac-b06c-737c9bb5b633",
+                "resourcePath": "datafiles_yy\\how to use the demo.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "ba96a530-0d74-41f2-afc6-78faa62d19ec",
             "Value": {
                 "id": "6ee1a7f6-72d7-45fd-8993-063e2f948657",
