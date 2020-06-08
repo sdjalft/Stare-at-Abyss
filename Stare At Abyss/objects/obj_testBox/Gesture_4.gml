@@ -5,7 +5,7 @@ dragged = false;
 if (place_meeting(x,y,obj_testDustbin)){
 	instance_destroy();
 }
-if (place_meeting(x,y,obj_testBoxSpawner)){
+if (place_meeting(x,y,obj_testBoxSpawner) || place_meeting(x,y,obj_solid)){
 	if (position_meeting(initX,initY,obj_testBox)){
 		instance_destroy();
 	}

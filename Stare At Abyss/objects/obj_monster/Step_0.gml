@@ -34,7 +34,7 @@ if (condition == "charge"){
 		condition = "attack";
 	}
 	if (target != 0){
-		mp_potential_step(target.x,target.y,spd,true);
+		mp_potential_step(target.x,target.y,spd,false);
 	}
 }
 

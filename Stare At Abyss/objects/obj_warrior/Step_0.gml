@@ -9,7 +9,7 @@ if (condition == 0){
 
 if (condition == "goto"){
 	var inst=instance_nearest(x,y,obj_door);
-	mp_potential_step(inst.x,inst.y,spd,true);
+	mp_potential_step(inst.x,inst.y,spd,false);
 	if (collision_circle(x,y,sig,obj_monster,false,true)){
 		condition = "charge";
 	}
