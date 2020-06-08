@@ -2,4 +2,3 @@
 // 你可以在此编辑器中写入代码
 
 draw_self();
-draw_text(x-10,y-10,hao);

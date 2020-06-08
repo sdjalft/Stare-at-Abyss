@@ -6,6 +6,7 @@ boxX = ds_list_create();
 boxY = ds_list_create();
 boxName = ds_list_create();	//若name为0则表示没有实例
 spawnTime = ds_list_create();	//默认为-1
+isUsed = ds_list_create();
 
 //testBox间隔数据
 spaceX = (sprite_width-sprite_get_width(spr_testBox))/2;

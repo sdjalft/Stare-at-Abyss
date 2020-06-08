@@ -5,4 +5,5 @@ if !dragged{
 	hspeed = 1;
 	x += hspeed;
 	image_blend = c_yellow;
+	moved = true;
 }

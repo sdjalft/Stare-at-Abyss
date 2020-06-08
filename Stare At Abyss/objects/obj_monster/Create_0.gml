@@ -28,4 +28,4 @@ xNext = x;
 yNext = y;
 
 //启动部分AI
-alarm[0]=1;
+alarm[0]=room_speed;
