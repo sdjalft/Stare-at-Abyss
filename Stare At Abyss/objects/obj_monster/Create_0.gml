@@ -22,6 +22,13 @@ condition = 0;	//当前状态
 //charge: 冲向一个对象
 //attack: 攻击对象
 
+//判断一些智能操作的东西，之后替换为公式
+canKite = choose(true,false);
+kitting = false;
+if (canKite){
+	att_rge = 160;	
+	spd = 5;	//方便调试
+}
 
 //私有变量
 xNext = x;

@@ -10,7 +10,7 @@ if (condition == 0){
 if (condition == "goto"){
 	var inst=instance_nearest(x,y,obj_door);
 	mp_potential_step(inst.x,inst.y,spd,false);
-	if (collision_circle(x,y,sig,obj_monster,false,true)){
+	if (collision_circle(x,y,sig,obj_monster,false,true) && !noCharge){
 		condition = "charge";
 	}
 }
@@ -25,7 +25,7 @@ if (condition == "charge"){
 	if (_num > 0){
 		target = _monsterList[| 0];
 	}
-	if (!collision_circle(x,y,sig*1.2,obj_monster,false,true)){		//参数可调
+	if (!collision_circle(x,y,sig*1.2,obj_monster,false,true) || _num == 0){		//参数可调
 		target = 0;
 		condition = "goto";
 	}
@@ -33,13 +33,14 @@ if (condition == "charge"){
 		condition = "attack";
 	}
 	if (target != 0){
-		mp_potential_step(target.x,target.y,spd,true);
+		mp_potential_step(target.x,target.y,spd,false);
 	}
 	ds_list_destroy(_monsterList);
 }
 
 if (condition == "attack"){
 	if (!collision_circle(x,y,att_rge,obj_monster,false,true)){
+		alarm[0] = 5*room_speed;
 		condition = "charge";
 	}
 }

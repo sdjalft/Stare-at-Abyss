@@ -23,3 +23,6 @@ condition = 0;	//当前状态
 //hide: 躲藏
 //charge: 冲向一个对象
 //attack: 攻击对象
+
+//判断一些智能操作的东西，之后替换为公式
+noCharge = false;

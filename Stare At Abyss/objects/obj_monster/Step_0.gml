@@ -16,6 +16,7 @@ if (condition == "patrol"){
 		target = collision_circle(x,y,sig,obj_warrior,false,true);
 		condition = "charge";
 	}
+	mp_potential_step(xNext,yNext,spd,false);
 	//主体ai在alarm[0]中执行
 }
 
@@ -40,6 +41,21 @@ if (condition == "charge"){
 
 if (condition == "attack"){
 	hp -= 0.3;	//仅用来测试
+	if (canKite){
+		if (collision_circle(x,y,att_rge*0.5,obj_warrior,false,true)){
+			var _dir = point_direction(target.x,target.y,x,y);
+			xNext = x+lengthdir_x(att_rge*0.45,_dir);
+			yNext = y+lengthdir_y(att_rge*0.45,_dir);
+			kitting = true;
+		}
+		if (kitting){
+			hp += 0.3;
+			mp_potential_step(xNext,yNext,spd,false);
+		}
+		if (x == xNext && y == yNext){
+			kitting = false;
+		}
+	}
 	if (!collision_circle(x,y,att_rge,obj_warrior,false,true)){
 		condition = "charge";
 	}

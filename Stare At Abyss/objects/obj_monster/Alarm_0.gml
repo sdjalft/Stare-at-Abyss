@@ -8,7 +8,6 @@ if (condition == "patrol"){	//目前巡逻使用的是随机方向行走，之�
 	var _dir = irandom(360);
 	xNext = x+lengthdir_x(150,_dir);
 	yNext = y+lengthdir_y(150,_dir);
-	move_towards_point(xNext,yNext,spd);
 }
 
 alarm[0] = 2.5*room_speed;
