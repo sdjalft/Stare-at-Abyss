@@ -40,9 +40,13 @@ if (condition == "charge"){
 
 if (condition == "attack"){
 	if (!collision_circle(x,y,att_rge,obj_monster,false,true)){
-		alarm[0] = 5*room_speed;
 		condition = "charge";
 	}
+}
+
+//一直都追不上，烦死了
+if (condition != "charge"){
+	alarm[0] = 5*room_speed;
 }
 
 //目前暂定逃跑优先级最高

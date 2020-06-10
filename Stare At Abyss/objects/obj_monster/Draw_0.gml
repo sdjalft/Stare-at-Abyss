@@ -3,7 +3,7 @@
 
 draw_self();
 draw_text(x-22,y-12,"怪物");
-draw_text(x-32,y+52,kitting);
+draw_text(x-32,y+52,direction);
 if (canKite){
 	draw_text(x-32,y+72,"会风筝");
 }
