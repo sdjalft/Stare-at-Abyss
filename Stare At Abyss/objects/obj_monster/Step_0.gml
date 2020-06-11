@@ -2,7 +2,6 @@
 // 你可以在此编辑器中写入代码
 
 if (condition == 0){
-	show_debug_message("wdnmd");
 	//需添加判断条件
 	condition = "patrol";
 }

@@ -103,11 +103,27 @@
             }
         },
         {
+            "Key": "31a6cac7-51ed-4a9e-95f9-e5642045f1c3",
+            "Value": {
+                "id": "d4a09d8d-e0f6-4504-b543-2e15cfa7e9df",
+                "resourcePath": "objects\\obj_continue\\obj_continue.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "322afa2f-ac23-4f9a-933d-22c5a5256d9d",
             "Value": {
                 "id": "f4921046-3c73-4a3c-b793-4f171385d8cb",
                 "resourcePath": "objects\\obj_testBox\\obj_testBox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "33393d71-b68c-412f-b00e-9d3f83683fbc",
+            "Value": {
+                "id": "283fb2d8-0fbe-4688-821a-d871d3a60793",
+                "resourcePath": "sprites\\spr_continue\\spr_continue.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -300,6 +316,14 @@
                 "id": "5eb6d032-eeb4-42f9-9c0f-979c19c6f183",
                 "resourcePath": "objects\\obj_startGame\\obj_startGame.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a0060eeb-2f4f-410e-80d5-583af6500b57",
+            "Value": {
+                "id": "7fcdc2a5-a51a-428d-87d0-445de9bb53af",
+                "resourcePath": "sprites\\spr_pause\\spr_pause.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -499,6 +523,14 @@
             "Value": {
                 "id": "5cebd838-46a2-40cb-b165-c6c81ed8a6c8",
                 "resourcePath": "objects\\obj_randomSeed\\obj_randomSeed.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f882083e-7e07-4716-ba89-b2c671574e21",
+            "Value": {
+                "id": "e46b3043-2b17-4c46-accb-2b65cf099353",
+                "resourcePath": "objects\\obj_pause\\obj_pause.yy",
                 "resourceType": "GMObject"
             }
         }
