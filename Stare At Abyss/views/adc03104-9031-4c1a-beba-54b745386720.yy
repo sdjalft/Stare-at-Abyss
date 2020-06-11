@@ -6,7 +6,8 @@
     "children": [
         "c22bcdc0-3008-4856-bb14-5250662754a3",
         "7373af27-b1ef-4dfb-8512-b77f8d519a20",
-        "157f4c6f-392b-4c06-917a-a42cf331837e"
+        "157f4c6f-392b-4c06-917a-a42cf331837e",
+        "f738f849-14ab-4526-b2d8-694d2683724d"
     ],
     "filterType": "GMObject",
     "folderName": "worldControl",
