@@ -4,3 +4,4 @@
 for (var _cc = 0; _cc < ds_list_size(units); _cc += 1){
 	instance_destroy(units[| _cc]);
 }
+global.settingMenuOn = false;

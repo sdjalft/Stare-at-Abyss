@@ -47,9 +47,73 @@ if (condition == "attack"){
 			yNext = y+lengthdir_y(att_rge*0.45,_dir);
 			kitting = true;
 		}
+		else{
+			if (canZouA){	//走A
+				var _dir = point_direction(target.x,target.y,x,y);
+				var _dis = sqrt(power(bbox_top-bbox_bottom,2)+power(bbox_right-bbox_left,2));
+				var _ni = true;
+				var _shun = true;
+				var _cho = 0;	//0代表无法走A，1代表逆时针走A，2代表顺时针走A
+				for (var _cc = 1; _cc < 3; _cc += 1){	//距离判断可调
+					var _xni = x+lengthdir_x(_dis*_cc,_dir-90);
+					var _yni = y+lengthdir_y(_dis*_cc,_dir-90);
+					if (place_meeting(_xni,_yni,obj_monster)){
+						_ni = false;
+						break;
+					}
+				}
+				for (var _cc = 1; _cc < 3; _cc += 1){	//距离判断可调
+					var _xshun = x+lengthdir_x(_dis,_dir+90);
+					var _yshun = y+lengthdir_y(_dis,_dir+90);
+					if (place_meeting(_xshun,_yshun,obj_monster)){
+						_shun = false;
+						break;
+					}
+				}
+				if (_shun){	//如果顺时针方向可以走A
+					if (_ni){
+						if (fondZouAShun){
+							_cho = 2;
+						}
+						else{
+							_cho = 1;
+						}
+					}
+					else{
+						_cho = 2;
+					}
+				}
+				else{
+					if (_ni){
+						_cho = 1;
+					}
+					else{
+						_cho = 0;
+					}
+				}
+				switch (_cho){
+					case 0:	zouAing = false;
+							break;
+					case 1:	xNext = x+lengthdir_x(_dis,_dir-90);
+							yNext = y+lengthdir_y(_dis,_dir-90);
+							zouAing = true;
+							break;
+					case 2:	xNext = x+lengthdir_x(_dis,_dir+90);
+							yNext = y+lengthdir_y(_dis,_dir+90);
+							zouAing = true;
+							break;
+				}
+			}
+		}
 		if (kitting){
-			hp += 0.3;
+			hp += 0.1;
 			mp_potential_step(xNext,yNext,spd,false);
+		}
+		else{
+			if (zouAing){
+				hp += 0.3;
+				mp_potential_step(xNext,yNext,spd,false);
+			}
 		}
 		if (x == xNext && y == yNext){
 			kitting = false;
