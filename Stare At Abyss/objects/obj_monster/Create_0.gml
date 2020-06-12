@@ -25,9 +25,9 @@ condition = 0;	//当前状态
 //判断一些智能操作的东西，之后替换为公式
 canKite = choose(true,false);	//是否会使用风筝战术
 kitting = false;	//是否正在风筝
+zouAing = false;	//是否正在走A
 if (canKite){
 	canZouA = choose(true,false);	//是否会使用走A（环形骑射形容更加恰当，但h&r描述简单）
-	zouAing = false;	//是否正在走A
 	att_rge = 160;	
 	spd = 5;	//方便调试
 }
