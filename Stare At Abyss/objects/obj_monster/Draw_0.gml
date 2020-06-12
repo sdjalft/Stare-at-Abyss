@@ -5,7 +5,12 @@ draw_self();
 draw_text(x-22,y-12,"怪物");
 draw_text(x-32,y+52,direction);
 if (canKite){
-	draw_text(x-32,y+72,"会风筝");
+	if (canZouA){
+		draw_text(x-32,y+72,"会走A");
+	}
+	else{
+		draw_text(x-32,y+72,"会风筝");
+	}
 }
 switch (condition){
 	case 0:	draw_text(x-32,y+32,"待命"); break;
