@@ -14,6 +14,8 @@ int = 20;	//智力
 cou = 50;	//勇气值
 tou = 0;	//韧性
 sig = 500;	//视野
+isRemote = false;	//是否是远程攻击
+chouHen = 0;
 condition = 0;	//当前状态
 
 //注：状态一览表
@@ -26,3 +28,9 @@ condition = 0;	//当前状态
 
 //判断一些智能操作的东西，之后替换为公式
 noCharge = false;
+canKite = false;
+kitting = false;
+if (isRemote){
+	att_rge = 200;
+	canKite = true;
+}

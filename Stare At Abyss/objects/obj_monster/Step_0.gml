@@ -32,7 +32,10 @@ if (condition == "charge"){
 		target = 0;
 		condition = "patrol";
 	}
-	if (collision_circle(x,y,att_rge/2,obj_warrior,false,true)){	//参数可定
+	if (collision_circle(x,y,att_rge*0.5,target,false,true) && !isRemote){	//参数可定
+		condition = "attack";
+	}
+	if (collision_circle(x,y,att_rge*0.8,target,false,true) && isRemote){
 		condition = "attack";
 	}
 	if (target != 0){
@@ -42,11 +45,12 @@ if (condition == "charge"){
 
 if (condition == "attack"){
 	//hp -= 0.3;	//仅用来测试
+	target.chouHen = self;
 	if (canKite){
 		if (collision_circle(x,y,att_rge*0.5,obj_warrior,false,true)){
 			var _dir = point_direction(target.x,target.y,x,y);
-			xNext = x+lengthdir_x(att_rge*0.35,_dir);
-			yNext = y+lengthdir_y(att_rge*0.35,_dir);
+			xNext = x+lengthdir_x(att_rge*0.3,_dir);
+			yNext = y+lengthdir_y(att_rge*0.3,_dir);
 			kitting = true;
 		}
 		if (kitting){
@@ -124,6 +128,11 @@ if (condition == "attack"){
 		zouAing = false;
 		condition = "patrol";
 	}
+}
+
+//消除仇恨
+if (condition != "attack" && target != 0){
+	target.chouHen = 0;
 }
 
 //目前暂定逃跑优先级最高

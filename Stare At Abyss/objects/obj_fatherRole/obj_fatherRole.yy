@@ -176,6 +176,34 @@
             "value": "0",
             "varName": "target",
             "varType": 0
+        },
+        {
+            "id": "69ab356c-01bc-41e9-8639-d5adf605ab2b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "isRemote",
+            "varType": 3
+        },
+        {
+            "id": "2cde2329-6a08-4c36-83de-a8f3a8bcafaa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "chouHen",
+            "varType": 0
         }
     ],
     "solid": true,

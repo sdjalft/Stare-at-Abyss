@@ -210,7 +210,7 @@
             "Key": "47470b84-f854-4d66-8075-156cbb9348bb",
             "Value": {
                 "id": "ea3575ba-eb48-4fc5-ad4b-2d355377e8ec",
-                "resourcePath": "tilesets\\tl_background\\tl_background.yy",
+                "resourcePath": "tilesets\\tl_spr_background\\tl_spr_background.yy",
                 "resourceType": "GMTileSet"
             }
         },

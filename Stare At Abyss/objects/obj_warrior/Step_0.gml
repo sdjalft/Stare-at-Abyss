@@ -29,7 +29,10 @@ if (condition == "charge"){
 		target = 0;
 		condition = "goto";
 	}
-	if (collision_circle(x,y,att_rge/2,obj_monster,false,true)){	//参数可调
+	if (collision_circle(x,y,att_rge*0.5,target,false,true) && !isRemote){	//参数可调
+		condition = "attack";
+	}
+	if (collision_circle(x,y,att_rge*0.8,target,false,true) && isRemote){	//参数可调
 		condition = "attack";
 	}
 	if (target != 0){
@@ -39,9 +42,44 @@ if (condition == "charge"){
 }
 
 if (condition == "attack"){
+	if (target != 0){
+		target.chouHen = self;
+	}
+	var _monsterList = ds_list_create();
+	var _num = collision_circle_list(x,y,sig,obj_monster,false,true,_monsterList,true);
+	if (canKite){
+		if (collision_circle(x,y,att_rge*0.5,obj_monster,false,true)){
+			var _dir = point_direction(target.x,target.y,x,y);
+			var _flag = true;
+			for (var _cc = 0; _cc < _num; _cc += 1){
+				if (abs(point_direction(x,y,_monsterList[| _cc].x,
+					_monsterList[| _cc].y) - _dir) < 50){	//风筝时看看身后有没有怪物
+					_flag = false;
+					break;
+				}
+			}
+			if (_flag){
+				xNext = x+lengthdir_x(att_rge*0.3,_dir);
+				yNext = y+lengthdir_y(att_rge*0.3,_dir);
+				kitting = true;
+			}
+		}
+		if (kitting){
+			mp_potential_step(xNext,yNext,spd,false);
+			if (collision_circle(x,y,att_rge*0.8,obj_monster,false,true)){
+				kitting = false;
+			}
+		}
+	}
 	if (!collision_circle(x,y,att_rge,obj_monster,false,true)){
 		condition = "charge";
 	}
+	ds_list_destroy(_monsterList);
+}
+
+//消除仇恨
+if (condition != "attack" && target != 0){
+	target.chouHen = 0;
 }
 
 //一直都追不上，烦死了

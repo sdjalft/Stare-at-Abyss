@@ -2,5 +2,5 @@
 // 你可以在此编辑器中写入代码
 
 
-scr_drawMapByJson(list1,tl_background,0,0);
-scr_drawMapByJson(list2,tl_background,512,0);
+scr_drawMapByJson(list1,tl_spr_background,0,0);
+scr_drawMapByJson(list2,tl_spr_background,512,0);
