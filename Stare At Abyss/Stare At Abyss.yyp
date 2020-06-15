@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "1985f69d-025e-4fbb-b518-7aa87d195e11",
+            "Value": {
+                "id": "b8bbbbb1-086f-4c7a-8a20-0c12b21cd481",
+                "resourcePath": "datafiles_yy\\map1.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "1e9d0aa6-21b3-4161-a7b6-9b3049f5bb1b",
             "Value": {
                 "id": "17ede0fa-40d9-4e2e-955f-e3f27dc36fd2",
@@ -210,7 +218,7 @@
             "Key": "47470b84-f854-4d66-8075-156cbb9348bb",
             "Value": {
                 "id": "ea3575ba-eb48-4fc5-ad4b-2d355377e8ec",
-                "resourcePath": "tilesets\\tl_spr_background\\tl_spr_background.yy",
+                "resourcePath": "tilesets\\tl_spr_spr_background\\tl_spr_spr_background.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -252,14 +260,6 @@
                 "id": "1fb655fb-f8ad-482d-96fe-ed5899faad2f",
                 "resourcePath": "views\\59d3b572-a3d8-4655-8cb3-d0e77114c52b.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "5a5dc70e-941e-4878-8bc6-9c1ddf610920",
-            "Value": {
-                "id": "44bc432d-a7df-459b-a08e-6e5d95f9fc5b",
-                "resourcePath": "datafiles_yy\\map1.json.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "ae022ce0-a4d5-4a44-8938-7852fca2a9a4",
+            "Value": {
+                "id": "eb805402-b21c-4f55-af83-1ef2e681a488",
+                "resourcePath": "datafiles_yy\\map2.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "b4a0e280-837c-4ed1-a003-d8003fef9ade",
             "Value": {
                 "id": "a3e136e5-735a-4bac-b06c-737c9bb5b633",
@@ -628,14 +636,6 @@
                 "id": "672ce504-773f-4f16-8b72-5baf930309c5",
                 "resourcePath": "views\\ef4f6a33-9b1e-47a2-bed1-b9215e772fe6.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f1211749-0011-4d09-8afc-d2a0c4a133b6",
-            "Value": {
-                "id": "4ab7855c-a0f3-4a1e-ab18-30f98b68659b",
-                "resourcePath": "datafiles_yy\\map2.json.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {

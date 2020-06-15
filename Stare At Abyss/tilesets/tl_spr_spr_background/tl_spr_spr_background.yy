@@ -2,7 +2,7 @@
     "id": "47470b84-f854-4d66-8075-156cbb9348bb",
     "modelName": "GMTileSet",
     "mvc": "1.11",
-    "name": "tl_spr_background",
+    "name": "tl_spr_spr_background",
     "auto_tile_sets": [
         
     ],

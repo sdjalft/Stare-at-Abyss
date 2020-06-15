@@ -28,6 +28,7 @@ condition = 0;	//当前状态
 canKite = choose(true,false);	//是否会使用风筝战术
 kitting = false;	//是否正在风筝
 zouAing = false;	//是否正在走A
+zouARot = 0;	//走A方向,0代表无法走A，1代表逆时针走A，2代表顺时针走A
 if (canKite){
 	isRemote = true;
 	canZouA = choose(true,false);	//是否会使用走A（环形骑射形容更加恰当，但h&r描述简单）
