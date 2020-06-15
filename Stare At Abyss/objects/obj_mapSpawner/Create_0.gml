@@ -19,7 +19,7 @@ for (var _cc = 0; _cc < ds_list_size(mapForWhole); _cc += 1){
 		ds_list_add(_tempList,_h,_w);
 		var _dataMap = ds_map_create();
 		var b = _layerList[| _dd];
-		ds_list_add(_mapList,"haha");	//测试
+		ds_list_add(_mapList,b[? "name"]);	//测试
 		_dataMap = b[? "data"];
 		var _dataSize = ds_map_size(_dataMap);
 		var _dataKey = ds_map_find_first(_dataMap);
