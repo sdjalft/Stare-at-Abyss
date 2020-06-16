@@ -1,9 +1,11 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码
 
-var _x = instance_create_depth(x+sprite_get_width(spr_settingMenu)-48,
+x = global.windowWidth / 8;
+y = global.windowHeight / 8;
+cha = instance_create_depth(x+sprite_get_width(spr_settingMenu)-48,
 			y+16,layer_get_depth("settingMenu")-1,obj_settingX);	//右上角的叉
-_x.menuId = self;
+cha.menuId = self;
 
 //组件大全
 units = ds_list_create();

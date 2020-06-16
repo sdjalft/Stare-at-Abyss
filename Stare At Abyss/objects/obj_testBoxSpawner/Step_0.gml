@@ -29,5 +29,5 @@ for (var _cc = 0; _cc < ds_list_size(boxX); _cc++){
 	}
 }
 
-x = camera_get_view_x(view_camera[0])+global.currentZoom*window_get_width()/20;
-y = camera_get_view_y(view_camera[0])+global.currentZoom*window_get_height()/2-sprite_height/2;
+x = camera_get_view_x(view_camera[0])+global.currentZoom*camera_get_view_width(view_camera[0])/20;
+y = camera_get_view_y(view_camera[0])+global.currentZoom*camera_get_view_height(view_camera[0])/2-sprite_get_height(spr_testBoxSpawner)/2;
