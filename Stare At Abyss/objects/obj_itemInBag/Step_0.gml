@@ -4,5 +4,5 @@
 //实时同步大小和调整位置
 image_xscale = global.currentZoom;
 image_yscale = global.currentZoom;
-x = camera_get_view_x(view_camera[0])+global.currentZoom*16*window_get_width()/20;
-y = camera_get_view_y(view_camera[0])+global.currentZoom*1*window_get_height()/20;
+x = fatherId.x+global.currentZoom*10*(location%8+1)+sprite_width*(location%8);	//参数可调
+y = fatherId.y+global.currentZoom*10*(floor(location/8)+1)+sprite_height*(floor(location/8));

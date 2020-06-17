@@ -3,11 +3,12 @@
 
 event_inherited();
 
-switch(currentAttribute){
-	case 0: global.windowWidth = 800;
-			global.windowHeight = 600;
-			break;
-	case 1: global.windowWidth = 1024;
-			global.windowHeight = 768;
-			break;
-}
+//分辨率暂时不能用
+//switch(currentAttribute){
+//	case 0: global.windowWidth = 800;
+//			global.windowHeight = 600;
+//			break;
+//	case 1: global.windowWidth = 1024;
+//			global.windowHeight = 768;
+//			break;
+//}

@@ -15,8 +15,15 @@ cou = 50;	//勇气值
 tou = 0;	//韧性
 sig = 500;	//视野
 isRemote = false;	//是否是远程攻击
-chouHen = 0;
+chouHen = 0;	//仇恨所在
 condition = 0;	//当前状态
+
+//背包
+bag = ds_map_create();
+gold = 0;
+ds_map_add(bag,1,3);
+ds_map_add(bag,2,2);
+ds_map_add(bag,3,1);
 
 //注：状态一览表
 //0: 待命

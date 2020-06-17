@@ -4,8 +4,8 @@
 //实时同步大小和调整位置
 image_xscale = global.currentZoom;
 image_yscale = global.currentZoom;
-x = camera_get_view_x(view_camera[0])+global.currentZoom*18*camera_get_view_width(view_camera[0])/20;
-y = camera_get_view_y(view_camera[0])+global.currentZoom*1*camera_get_view_height(view_camera[0])/20;
+x = camera_get_view_x(view_camera[0])+global.currentZoom*18*window_get_width()/20;
+y = camera_get_view_y(view_camera[0])+global.currentZoom*1*window_get_height()/20;
 
 //窗口失去焦点亦会暂停
 if (!window_has_focus() || keyboard_check_pressed(vk_escape)){

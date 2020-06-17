@@ -4,3 +4,9 @@
 //实时同步大小
 image_xscale = global.currentZoom;
 image_yscale = global.currentZoom;
+
+if (keyboard_check_pressed(vk_escape) && global.paused){
+	instance_activate_all();
+	global.paused = false;
+	instance_destroy();
+}

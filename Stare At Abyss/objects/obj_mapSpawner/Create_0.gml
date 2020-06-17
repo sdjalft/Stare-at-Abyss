@@ -31,6 +31,7 @@ for (var _cc = 0; _cc < ds_list_size(mapForWhole); _cc += 1){
 				var c = _tile[| _ff];
 				ds_list_add(_tempList,c[? "x"],c[? "y"],c[? "index"]);
 			}
+			_dataKey = ds_map_find_next(_dataMap,_dataKey);
 		}
 		ds_list_add(_mapList,_tempList);
 	}
