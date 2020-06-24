@@ -9,5 +9,6 @@ switch (condition){
 	case "escape": draw_text(x-32,y+32,"撤离"); break;
 	case "charge": draw_text(x-32,y+32,"冲冲冲"); break;
 	case "attack": draw_text(x-32,y+32,"攻击"); break;
+	case "pick": draw_text(x-32,y+32,"捡东西"); break;
 }
 draw_text(x-32,y+52,"杀怪数:"+string(global.kill));

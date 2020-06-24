@@ -10,6 +10,9 @@ if (condition == 0){
 if (condition == "goto"){
 	var inst=instance_nearest(x,y,obj_door);
 	mp_potential_step(inst.x,inst.y,spd,false);
+	if (collision_circle(x,y,sig,obj_item,false,true)){
+		condition = "pick";
+	}
 	if (collision_circle(x,y,sig,obj_monster,false,true) && !noCharge){
 		condition = "charge";
 	}
@@ -75,6 +78,21 @@ if (condition == "attack"){
 		condition = "charge";
 	}
 	ds_list_destroy(_monsterList);
+}
+
+if (condition == "pick"){
+	var _itemList = ds_list_create();
+	var _num = collision_circle_list(x,y,sig,obj_item,false,true,_itemList,true);
+	if (_num > 0){
+		var _target = _itemList[| 0];
+		mp_potential_step(_target.x,_target.y,spd,false);
+	}
+	if (_num == 0){
+		condition = "goto";
+	}
+	if (collision_circle(x,y,sig,obj_monster,false,true) && !noCharge){
+		condition = "charge";
+	}
 }
 
 //消除仇恨

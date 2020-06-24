@@ -44,7 +44,7 @@ if (condition == "charge"){
 }
 
 if (condition == "attack"){
-	//hp -= 0.3;	//仅用来测试
+	hp -= 0.3;	//仅用来测试
 	target.chouHen = self;
 	if (canKite){
 		if (collision_circle(x,y,att_rge*0.5,obj_warrior,false,true)){

@@ -32,6 +32,7 @@ ds_map_add(bag,3,1);
 //hide: 躲藏
 //charge: 冲向一个对象
 //attack: 攻击对象
+//pick: 收集物品
 
 //判断一些智能操作的东西，之后替换为公式
 noCharge = false;
