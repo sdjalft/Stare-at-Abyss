@@ -48,6 +48,7 @@ if (condition == "attack"){
 	if (target != 0){
 		target.chouHen = self;
 	}
+	target = chouHen;
 	var _monsterList = ds_list_create();
 	var _num = collision_circle_list(x,y,sig,obj_monster,false,true,_monsterList,true);
 	if (canKite){
@@ -93,6 +94,7 @@ if (condition == "pick"){
 	if (collision_circle(x,y,sig,obj_monster,false,true) && !noCharge){
 		condition = "charge";
 	}
+	
 }
 
 //消除仇恨
