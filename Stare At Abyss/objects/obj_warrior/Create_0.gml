@@ -17,6 +17,7 @@ sig = 500;	//视野
 isRemote = false;	//是否是远程攻击
 chouHen = 0;	//仇恨所在
 condition = 0;	//当前状态
+att_cooldown = 0;	//攻击冷却
 
 //背包
 bag = ds_map_create();

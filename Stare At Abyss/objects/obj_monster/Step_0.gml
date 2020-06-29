@@ -46,6 +46,15 @@ if (condition == "charge"){
 if (condition == "attack"){
 	hp -= 0.3;	//仅用来测试
 	target.chouHen = self;
+	if (isRemote && att_cooldown <= 0){
+		var _bul = instance_create_layer(x,y,"Instances",obj_bullet);
+		var _dir = point_direction(x,y,target.x,target.y);
+		with (_bul){
+			motion_set(_dir,10);
+		}
+		att_cooldown = att_tim*room_speed;
+	}
+	att_cooldown -= 1;
 	if (canKite){
 		if (collision_circle(x,y,att_rge*0.5,obj_warrior,false,true)){
 			var _dir = point_direction(target.x,target.y,x,y);

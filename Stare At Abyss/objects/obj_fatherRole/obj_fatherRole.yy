@@ -204,6 +204,20 @@
             "value": "0",
             "varName": "chouHen",
             "varType": 0
+        },
+        {
+            "id": "dbd7545b-2651-410e-b258-620ebdd45d88",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "att_cooldown",
+            "varType": 0
         }
     ],
     "solid": true,

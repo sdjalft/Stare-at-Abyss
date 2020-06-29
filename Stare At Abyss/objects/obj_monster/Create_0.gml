@@ -15,6 +15,7 @@ sig = 300;	//视野
 isRemote = false;	//是否是远程攻击
 chouHen = 0;
 condition = 0;	//当前状态
+att_cooldown = 0;	//攻击冷却
 
 //注：状态一览表
 //0: 待命
