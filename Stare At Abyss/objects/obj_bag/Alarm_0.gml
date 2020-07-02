@@ -17,3 +17,15 @@ for (var _cc = 0; _cc < _size; _cc += 1){
 	_key = ds_map_find_next(_items,_key);
 	ds_list_add(items,_inst);
 }
+for (var _cc = 0; _cc < _size-1; _cc += 1){
+	for (var _dd = _cc+1; _dd < _size; _dd += 1){
+		if (items[| _cc].itemId > items[| _dd].itemId){
+			var temp =  items[| _cc];
+			items[| _cc] = items[| _dd];
+			items[| _dd] = temp;
+			var lo = items[| _cc].location;
+			items[| _cc].location = items[| _dd].location;
+			items[| _dd].location = lo;
+		}
+	}
+}
